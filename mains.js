@@ -3,7 +3,8 @@ const pageNames = {
   '/': 'home',
   '/posts/post.html': 'posts',
   '/about/about.html': 'about',
-  '/posts/blog1.html': 'welcome',
+  '/posts/blog0.html': 'welcome',
+  '/posts/blog1.html': 'Web 3.0, AI, and the Future of the Internet',
 };
 
 function generateBreadcrumbs() {

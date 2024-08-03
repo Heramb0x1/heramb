@@ -12,12 +12,6 @@
   src: local('Space Mono Bold'), local('SpaceMono-Bold'), url(path/to/space-mono-bold.woff2) format('woff2');
 }
 
-mark {
-  display: inline-block;
-  line-height: 1em;
-  padding-bottom: 0.5em;
-}
-
 .space-mono-regular {
   font-family: 'Space Mono', monospace;
   font-weight: 400;

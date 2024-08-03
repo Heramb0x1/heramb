@@ -1,121 +1,153 @@
+
 @font-face {
-    font-family: 'Space Mono';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Space Mono Regular'), local('SpaceMono-Regular'), url(path/to/space-mono-regular.woff2) format('woff2');
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Space Mono Regular'), local('SpaceMono-Regular'), url(path/to/space-mono-regular.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: 'Space Mono';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Space Mono Bold'), local('SpaceMono-Bold'), url(path/to/space-mono-bold.woff2) format('woff2');
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Space Mono Bold'), local('SpaceMono-Bold'), url(path/to/space-mono-bold.woff2) format('woff2');
 }
+
 
 .space-mono-regular {
-    font-family: 'Space Mono', monospace;
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .space-mono-bold {
-    font-family: 'Space Mono', monospace;
-    font-weight: 700;
-    font-style: normal;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .space-mono-regular-italic {
-    font-family: 'Space Mono', monospace;
-    font-weight: 400;
-    font-style: italic;
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .space-mono-bold-italic {
-    font-family: 'Space Mono', monospace;
-    font-weight: 700;
-    font-style: italic;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-style: italic;
 }
+
 
 body {
-    background-color: black;
-    color: white;
-    font-family: 'Space Mono', monospace;
-    font-weight: 300;
-    font-style: normal;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    padding: 2em;
-    font-size: 16px;
-    line-height: 1.6;
-    word-wrap: break-word;
-    hyphens: auto;
-    overflow-x: hidden;
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+  font-family: 'Space Mono', monospace;
+  font-weight: 300;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding-top: 7em;
+  padding-left: 17em;
 }
 
-@media screen and (min-width: 769px) {
-    body {
-        padding: 4em;
-        max-width: 800px;
-        margin: 0 auto;
-    }
-}
-
-p {
-    margin-bottom: 1.5em;
+@media screen and (max-width: 768px) {
+  body {
+    padding: 1em;
+    font-size: 14px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 .heramb {
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Space Mono', monospace;
-    font-weight: 700;
-    font-size: 24px;
-    color: #FFFFFF;
-    padding-bottom: 1em;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
 }
 
-ul {
-    list-style-type: disc;
-    padding-left: 1.5em;
-}
-
-ul li::before {
-    content: "\2022";
-    color: #7460E0;
-    font-size: 1.2em;
-    margin-right: 0.5em;
-}
 
 .breadcrumbs {
-    color: #7460E0;
+  color: #7460E0;
 }
 
 .breadcrumbs a {
-    color: #7460E0;
+  color: #7460E0;
+  text-decoration: none;
 }
 
-.responsive-image {
-    max-width: 100%;
-    height: auto;
+.breadcrumbs a:hover {
+  color: #ffffff;
 }
 
-footer {
-    background-color: #000000;
-    padding: 2em 0;
-    text-align: center;
-    margin-top: auto;
+
+.projects-container {
+  margin-top: 2em;
 }
 
-.footer-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 1em;
+.projects-container h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 1em;
 }
 
-.footer-content p {
-    margin: 0;
-    font-size: 14px;
-    color: #666;
+.projects-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.projects-container li {
+  margin-bottom: 1.5em;
+  display: flex;
+  align-items: center;
+}
+
+.projects-container .date {
+  font-size: 14px;
+  margin-right: 0.5em;
+}
+
+.project-link {
+  color: white;
+  text-decoration: none; 
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+
+.project-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px; 
+  width: 100%;
+  height: 0.5px;
+  background-color: white;
+}
+
+.project-link:hover {
+  color: #9580FF;
+}
+
+
+.projects-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.project-list li {
+  margin-bottom: 10px;
+}
+
+.bullet {
+  content: "\2022";
+  color: #7460E0;
+  font-size: 1.2em;
+  margin-right: 0.4em;
 }

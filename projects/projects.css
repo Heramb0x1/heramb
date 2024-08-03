@@ -113,7 +113,7 @@ body {
   margin-right: 0.5em;
 }
 
-.project-link {
+.projects-link {
   color: white;
   text-decoration: none; 
   font-size: 14px;
@@ -121,7 +121,7 @@ body {
   position: relative;
 }
 
-.project-link::after {
+.projects-link::after {
   content: '';
   position: absolute;
   left: 0;
@@ -131,7 +131,7 @@ body {
   background-color: white;
 }
 
-.project-link:hover {
+.projects-link:hover {
   color: #9580FF;
 }
 
@@ -141,7 +141,7 @@ body {
   padding: 0;
 }
 
-.project-list li {
+.projects-list li {
   margin-bottom: 10px;
 }
 

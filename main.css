@@ -191,3 +191,21 @@ h1 span {
 .about-text {
   max-width: 600px;
 }
+
+
+.foot{
+  display: inline-block;
+  justify-content: center;
+  margin-left: 450px;
+  margin-top: 382px;
+  font-size: 0.8em;
+}
+
+.idk{
+  margin-left: 200px;
+}
+
+.site-counter{
+  margin-top: 29px;
+  margin-left: 70px;
+}

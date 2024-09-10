@@ -131,7 +131,7 @@ header {
   margin-bottom: 5px;
   padding-left: 0px;
 }
-/*do not mess with this section unless you have 2 espresso shots */
+/* do not mess up here, unless you lose a hackathon ;[ */
 header a {
   color: #7460E0;
   text-decoration: none;
@@ -145,7 +145,7 @@ header a {
   font-size: 15px;
   
 }
-/*okay thats it*/
+/*just kidding ;)*/
 
 main {
   flex-grow: 1;

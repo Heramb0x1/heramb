@@ -1,37 +1,39 @@
 @font-face {
-  font-family: 'Space Mono';
+  font-family: "Space Mono";
   font-style: normal;
   font-weight: 400;
-  src: local('Space Mono Regular'), local('SpaceMono-Regular'), url(path/to/space-mono-regular.woff2) format('woff2');
+  src: local("Space Mono Regular"), local("SpaceMono-Regular"),
+    url(path/to/space-mono-regular.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: 'Space Mono';
+  font-family: "Space Mono";
   font-style: normal;
   font-weight: 700;
-  src: local('Space Mono Bold'), local('SpaceMono-Bold'), url(path/to/space-mono-bold.woff2) format('woff2');
+  src: local("Space Mono Bold"), local("SpaceMono-Bold"),
+    url(path/to/space-mono-bold.woff2) format("woff2");
 }
 
 .space-mono-regular {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-weight: 400;
   font-style: normal;
 }
 
 .space-mono-bold {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-weight: 700;
   font-style: normal;
 }
 
 .space-mono-regular-italic {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-weight: 400;
   font-style: italic;
 }
 
 .space-mono-bold-italic {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-weight: 700;
   font-style: italic;
 }
@@ -40,7 +42,7 @@ body {
   overflow-x: hidden;
   background-color: black;
   color: white;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-weight: 300;
   font-style: normal;
   display: flex;
@@ -76,7 +78,6 @@ body {
   text-decoration-style: solid;
   text-underline-offset: 3px;
   padding-right: 2px;
-
 }
 
 .linkedin-com {
@@ -88,7 +89,6 @@ body {
   text-decoration-style: solid;
   text-underline-offset: 3px;
   padding-right: 2px;
-
 }
 
 .instagram-com {
@@ -101,10 +101,9 @@ body {
   text-decoration-style: solid;
   text-underline-offset: 3px;
   padding-right: 2px;
-
 }
 
-.github {
+.github-com {
   margin-top: 2em;
   margin-left: 1em;
   font-size: 0.8em;
@@ -113,7 +112,7 @@ body {
   text-decoration-color: #ffffff;
   text-decoration-style: solid;
   text-underline-offset: 3px;
-  padding-left: 10px;
+  padding-left: 8px;
 }
 
 .container {
@@ -133,17 +132,16 @@ header {
 }
 /* do not mess up here, unless you lose a hackathon ;[ */
 header a {
-  color: #7460E0;
+  color: #7460e0;
   text-decoration: none;
   margin: 0 0.5em;
   font-size: 1em;
   font-weight: bold;
   display: inline-block;
   overflow-wrap: break-word;
-  font-family: 'Space Mono';
+  font-family: "Space Mono";
   font-weight: 700;
   font-size: 15px;
-  
 }
 /*just kidding ;)*/
 
@@ -163,10 +161,10 @@ h1 span {
 .heramb {
   display: inline-block;
   overflow-wrap: break-word;
-  font-family: 'Space Mono';
+  font-family: "Space Mono";
   font-weight: 700;
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .breadcrumbs {
@@ -177,7 +175,7 @@ h1 span {
 
 .breadcrumbs a {
   text-decoration: none;
-  color: #7460E0;
+  color: #7460e0;
 }
 
 .breadcrumbs a:hover {
@@ -192,8 +190,7 @@ h1 span {
   max-width: 600px;
 }
 
-
-.foot{
+.foot {
   display: inline-block;
   justify-content: center;
   margin-left: 450px;
@@ -201,11 +198,11 @@ h1 span {
   font-size: 0.8em;
 }
 
-.idk{
+.idk {
   margin-left: 200px;
 }
 
-.site-counter{
+.site-counter {
   margin-top: 29px;
   margin-left: 70px;
 }

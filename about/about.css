@@ -14,6 +14,10 @@
     url(path/to/space-mono-bold.woff2) format("woff2");
 }
 
+.breadcrumbs a:hover {
+  color: #ffffff;
+}
+
 mark {
   display: inline-block;
   background-color: RGB(170, 255, 0);
@@ -96,6 +100,7 @@ ul li::before {
 
 .breadcrumbs a {
   color: #7460e0;
+  text-decoration: none;
 }
 
 footer {

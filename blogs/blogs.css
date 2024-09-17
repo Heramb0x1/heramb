@@ -39,7 +39,6 @@
 }
 
 body {
-  overflow-x: hidden;
   background-color: black;
   color: white;
   font-family: "Space Mono", monospace;
@@ -54,6 +53,7 @@ body {
   line-height: 1.6;
   word-wrap: break-word;
   hyphens: auto;
+  overflow-x: hidden;
 }
 
 @media screen and (min-width: 769px) {
@@ -78,6 +78,18 @@ p {
   padding-bottom: 1em;
 }
 
+ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #7460e0;
+  font-size: 1.2em;
+  margin-right: 0.5em;
+}
+
 .breadcrumbs {
   color: #7460e0;
 }
@@ -89,18 +101,6 @@ p {
 
 .breadcrumbs a:hover {
   color: #ffffff;
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 1.5em;
-}
-
-ul li::before {
-  content: "\2022";
-  color: #7460e0;
-  font-size: 1.2em;
-  margin-right: 0.5em;
 }
 
 .responsive-image {

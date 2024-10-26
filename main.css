@@ -47,11 +47,12 @@ body {
   font-style: normal;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   padding: 2em;
   padding-top: 4em;
   padding-left: 5em;
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {
@@ -62,10 +63,7 @@ body {
 }
 
 .betterwork-ai {
-  display: inline-block;
-  width: 1408px;
-  height: 08px;
-  margin-top: 0px;
+  height: auto;
 }
 
 .xdot-com {
@@ -130,7 +128,7 @@ header {
   margin-bottom: 5px;
   padding-left: 0px;
 }
-/* do not mess up here, unless you lose a hackathon ;[ */
+
 header a {
   color: #7460e0;
   text-decoration: none;
@@ -143,7 +141,6 @@ header a {
   font-weight: 700;
   font-size: 15px;
 }
-/*just kidding ;)*/
 
 main {
   flex-grow: 1;
@@ -190,19 +187,59 @@ h1 span {
   max-width: 600px;
 }
 
-.foot {
-  display: inline-block;
-  justify-content: center;
-  margin-left: 450px;
-  margin-top: 382px;
-  font-size: 0.8em;
-}
-
 .idk {
   margin-left: 200px;
 }
 
+.foot {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: auto;
+  padding: 1rem;
+}
+
 .site-counter {
-  margin-top: 29px;
-  margin-left: 70px;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  word-wrap: break-word;
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+.site-counter img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+  .foot {
+    padding: 0.5rem;
+  }
+
+  .site-counter {
+    font-size: 0.9em;
+  }
+
+  header {
+    padding: 1em 0;
+  }
+
+  header a {
+    margin: 0 0.3em;
+  }
+
+  .xdot-com,
+  .linkedin-com,
+  .instagram-com,
+  .github-com {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+.desktop-1 {
+  flex: 1;
 }

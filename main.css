@@ -38,6 +38,12 @@
   font-style: italic;
 }
 
+
+::selection {
+  background-color: #7303FC;
+  color: #ffffff;
+}
+
 body {
   overflow-x: hidden;
   background-color: black;

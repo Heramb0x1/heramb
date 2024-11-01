@@ -1,126 +1,129 @@
-@font-face {
-  font-family: "Space Mono";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Space Mono Regular"), local("SpaceMono-Regular"),
-    url(path/to/space-mono-regular.woff2) format("woff2");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
+:root {
+  --primary-color: #7460e0;
+  --highlight-color: RGB(170, 255, 0);
+  --text-color: #ffffff;
+  --background-color: #000000;
 }
 
-@font-face {
-  font-family: "Space Mono";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Space Mono Bold"), local("SpaceMono-Bold"),
-    url(path/to/space-mono-bold.woff2) format("woff2");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 ::selection {
   background-color: #7303fc;
-  color: #ffffff;
-}
-
-.breadcrumbs a:hover {
-  color: #ffffff;
-}
-
-mark {
-  display: inline-block;
-  background-color: RGB(170, 255, 0);
-  line-height: 1em;
-  padding-bottom: 0.5em;
-}
-
-.space-mono-regular {
-  font-family: "Space Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.space-mono-bold {
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.space-mono-regular-italic {
-  font-family: "Space Mono", monospace;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.space-mono-bold-italic {
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-  font-style: italic;
+  color: var(--text-color);
 }
 
 body {
-  overflow-x: hidden;
-  background-color: black;
-  color: white;
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
   font-weight: 300;
-  font-style: normal;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  padding-top: 7em;
-  padding-left: 17em;
-  padding-right: 17em;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    padding: 1em;
-    font-size: 14px;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  margin-bottom: 2rem;
 }
 
 .heramb {
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  color: #ffffff;
-}
-
-ul {
-  list-style-type: disc;
-}
-
-ul li::before {
-  content: "\2022";
-  color: #7460e0;
-  font-size: 1.2em;
-  margin-right: 0.5em;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
 }
 
 .breadcrumbs {
-  color: #7460e0;
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .breadcrumbs a {
-  color: #7460e0;
+  color: var(--primary-color);
   text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 400;
+}
+
+.breadcrumbs a:hover {
+  color: var(--text-color);
+}
+
+main section {
+  margin-bottom: 2rem;
+}
+
+h1,
+h2 {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+mark {
+  background-color: var(--highlight-color);
+  color: var(--background-color);
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+ul li::before {
+  content: "•";
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+}
+
+ul li s {
+  color: #666;
+  font-weight: 300;
 }
 
 footer {
-  background-color: #000000;
-  padding: 350px 0;
   text-align: center;
+  padding: 1rem 0;
+  font-size: 0.8rem;
 }
 
-.footer-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 50px;
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
 }
 
-.footer-content p {
-  margin: 0;
-  font-size: 14px;
-  color: #666;
+.betterwork-ai {
+  text-decoration: underline dotted grey;
+  text-decoration-thickness: 2.4px;
+  color: #ffffff;
+}
+
+.betterwork-ai:hover {
+  background-color: #ff00c7;
+  color: #000000;
 }

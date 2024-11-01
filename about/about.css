@@ -1,4 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Space Mono Regular"), local("SpaceMono-Regular"),
+    url(path/to/space-mono-regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Space Mono Bold"), local("SpaceMono-Bold"),
+    url(path/to/space-mono-bold.woff2) format("woff2");
+}
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
 
 :root {
   --primary-color: #7460e0;
@@ -37,7 +76,7 @@ header {
 }
 
 .heramb {
-  font-family: "Inter", sans-serif;
+  font-family: "Space Mono", monospace;
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--text-color);
@@ -47,7 +86,8 @@ header {
 .breadcrumbs {
   color: var(--primary-color);
   font-size: 0.9rem;
-  font-weight: 400;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
 }
 
 .breadcrumbs a {

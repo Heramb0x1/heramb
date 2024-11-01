@@ -13,7 +13,12 @@
   src: local("Space Mono Bold"), local("SpaceMono-Bold"),
     url(path/to/space-mono-bold.woff2) format("woff2");
 }
-
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: url('https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50.woff2') format("woff2");
+}
 .space-mono-regular {
   font-family: "Space Mono", monospace;
   font-weight: 400;

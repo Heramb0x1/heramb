@@ -69,44 +69,20 @@ body {
 }
 
 .betterwork-ai {
-  height: auto;
+  text-decoration: underline dotted grey;
+  text-decoration-thickness: 2.4px;
+  color: #ffffff;
 }
 
-.xdot-com {
-  margin-top: 2em;
-  margin-left: 1em;
-  font-size: 0.8em;
-  text-decoration: underline;
-  text-decoration-thickness: 0.2px;
-  text-decoration-color: #ffffff;
-  text-decoration-style: solid;
-  text-underline-offset: 3px;
-  padding-right: 2px;
+.betterwork-ai:hover {
+  background-color: #ff00c7;
+  color: #000000;
 }
 
-.linkedin-com {
-  margin-top: 2em;
-  font-size: 0.8em;
-  text-decoration: underline;
-  text-decoration-thickness: 0.2px;
-  text-decoration-color: #ffffff;
-  text-decoration-style: solid;
-  text-underline-offset: 3px;
-  padding-right: 2px;
-}
 
-.instagram-com {
-  margin-top: 2em;
-  margin-left: 1em;
-  font-size: 0.8em;
-  text-decoration: underline;
-  text-decoration-thickness: 0.2px;
-  text-decoration-color: #ffffff;
-  text-decoration-style: solid;
-  text-underline-offset: 3px;
-  padding-right: 2px;
-}
-
+.xdot-com,
+.linkedin-com,
+.instagram-com,
 .github-com {
   margin-top: 2em;
   margin-left: 1em;
@@ -116,7 +92,24 @@ body {
   text-decoration-color: #ffffff;
   text-decoration-style: solid;
   text-underline-offset: 3px;
-  padding-left: 8px;
+  padding-right: 2px;
+}
+
+.xdot-com:hover {
+  background-color: #ff00c7;
+  color: #000000;
+}
+.linkedin-com:hover {
+  background-color: #ff00c7;
+  color: #000000;
+}
+.github-com:hover {
+  background-color: #ff00c7;
+  color: #000000;
+}
+.instagram-com:hover {
+  background-color: #ff00c7;
+  color: #000000;
 }
 
 .container {

@@ -19,7 +19,10 @@
   font-weight: 400;
   font-style: normal;
 }
-
+::selection {
+  background-color: #7303fc;
+  color: #ffffff;
+}
 .space-mono-bold {
   font-family: "Space Mono", monospace;
   font-weight: 700;

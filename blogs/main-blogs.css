@@ -25,7 +25,10 @@
   font-weight: 700;
   font-style: normal;
 }
-
+::selection {
+  background-color: #7303fc;
+  color: #ffffff;
+}
 .space-mono-regular-italic {
   font-family: "Space Mono", monospace;
   font-weight: 400;

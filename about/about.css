@@ -13,6 +13,10 @@
   src: local("Space Mono Bold"), local("SpaceMono-Bold"),
     url(path/to/space-mono-bold.woff2) format("woff2");
 }
+::selection {
+  background-color: #7303fc;
+  color: #ffffff;
+}
 
 .breadcrumbs a:hover {
   color: #ffffff;

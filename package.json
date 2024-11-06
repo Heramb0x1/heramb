@@ -1,0 +1,16 @@
+{
+  "name": "portfolio--remake",
+  "version": "1.0.0",
+  "description": "> **[heramb.vercel.app](https://herambvercelapp-heramb0x1s-projects.vercel.app/)**",
+  "main": "mains.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1"
+  }
+}

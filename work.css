@@ -1,0 +1,183 @@
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Space Mono Regular"), local("SpaceMono-Regular"),
+    url(path/to/space-mono-regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Space Mono Bold"), local("SpaceMono-Bold"),
+    url(path/to/space-mono-bold.woff2) format("woff2");
+}
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+  font-family: "Space Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding-top: 7em;
+  padding-left: 17em;
+  padding-right: 17em;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 1em;
+    font-size: 14px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+.heramb {
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.breadcrumbs {
+  color: #7460e0;
+}
+
+.breadcrumbs a {
+  color: #7460e0;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  color: #ffffff;
+}
+
+.work-container {
+  margin-top: 2em;
+}
+
+.work-container h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.work-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.work-container li {
+  margin-bottom: 1.5em;
+  display: flex;
+  align-items: center;
+}
+
+.work-container .date {
+  font-size: 14px;
+  margin-right: 0.5em;
+}
+
+.work-link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+
+.work-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 0.5px;
+  background-color: white;
+}
+
+.work-link:hover {
+  color: #9580ff;
+}
+
+.work-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.work-list li {
+  margin-bottom: 10px;
+}
+
+.bullet {
+  content: "\2022";
+  color: #7460e0;
+  font-size: 1.2em;
+  margin-right: 0.4em;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: beige;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .bg-video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .bg-video {
+    width: auto;
+    height: 100%;
+  }
+}

@@ -13,13 +13,21 @@
   src: local("Space Mono Bold"), local("SpaceMono-Bold"),
     url(path/to/space-mono-bold.woff2) format("woff2");
 }
-
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: url('https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50.woff2') format("woff2");
+}
 .space-mono-regular {
   font-family: "Space Mono", monospace;
   font-weight: 400;
   font-style: normal;
 }
-
+::selection {
+  background-color: #7303fc;
+  color: #ffffff;
+}
 .space-mono-bold {
   font-family: "Space Mono", monospace;
   font-weight: 700;
@@ -41,7 +49,7 @@
 body {
   background-color: black;
   color: white;
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
   font-style: normal;
   display: flex;
@@ -92,6 +100,7 @@ ul li::before {
 
 .breadcrumbs {
   color: #7460e0;
+  font-family: "Space Mono", monospace;
 }
 
 .breadcrumbs a {

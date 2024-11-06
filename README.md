@@ -1,4 +1,3 @@
 
-> **[heramb.vercel.app](https://herambvercelapp-heramb0x1s-projects.vercel.app/)**
+> **[heramb.dino.icu](https://heramb.dino.icu)**
 
-just a personal portfolio website

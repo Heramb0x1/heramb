@@ -47,7 +47,8 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 300;
-  src: url('https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50.woff2') format("woff2");
+  src: url("https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50.woff2")
+    format("woff2");
 }
 
 body {

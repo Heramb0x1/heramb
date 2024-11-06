@@ -109,6 +109,7 @@ body {
   background-color: #ff00c7;
   color: #000000;
 }
+
 .container {
   max-width: 400px;
   width: 100%;
@@ -154,7 +155,7 @@ h1 span {
 .heramb {
   display: inline-block;
   overflow-wrap: break-word;
-  font-family: "Space Mono", monospace;
+  font-family: "Space Mono";
   font-weight: 700;
   font-size: 20px;
   color: #ffffff;

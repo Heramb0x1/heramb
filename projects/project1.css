@@ -38,11 +38,23 @@
   font-style: italic;
 }
 
+::selection {
+  background-color: #7303fc;
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: url('https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50.woff2') format("woff2");
+}
+
 body {
   overflow-x: hidden;
   background-color: black;
   color: white;
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
   font-style: normal;
   display: flex;
@@ -80,6 +92,7 @@ p {
 
 .breadcrumbs {
   color: #7460e0;
+  font-family: "Space Mono", monospace;
 }
 
 .breadcrumbs a {
@@ -124,5 +137,16 @@ footer {
 .footer-content p {
   margin: 0;
   font-size: 14px;
-  color: #666;
+  color: #667;
+}
+
+.github-com:hover {
+  background-color: #ff00c7;
+  color: #000000;
+}
+
+.github-com {
+  text-decoration: underline dotted grey;
+  text-decoration-thickness: 2.4px;
+  color: #ffffff;
 }

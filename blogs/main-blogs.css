@@ -151,3 +151,7 @@ p {
   font-size: 1.2em;
   margin-right: 0.4em;
 }
+::selection {
+  background-color: #7303fc;
+  color: #ffffff;
+}

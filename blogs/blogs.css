@@ -97,6 +97,7 @@ ul li::before {
 .breadcrumbs a {
   color: #7460e0;
   text-decoration: none;
+  font-family: "Space Mono", monospace;
 }
 
 .breadcrumbs a:hover {
@@ -125,4 +126,8 @@ footer {
   margin: 0;
   font-size: 14px;
   color: #666;
+}
+::selection {
+  background-color: #7303fc;
+  color: #ffffff;
 }

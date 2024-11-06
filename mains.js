@@ -9,6 +9,7 @@ const pageNames = {
   "/blogs/blog1.html": "Web 3.0, AI, and the Future of the Internet",
 };
 
+
 function generateBreadcrumbs() {
   const breadcrumbContainer = document.querySelector(".breadcrumbs");
   const pathSegments = currentPage

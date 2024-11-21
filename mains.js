@@ -5,6 +5,7 @@ const pageNames = {
   "/about/about.html": "about",
   "/projects/projects.html": "projects",
   "/projects/project1.html": "MoodE : Mood Based Environment Development",
+  "/projects/project2.html": "aiindians.org",
   "/blogs/blog0.html": "Back to Hell! ",
   "/blogs/blog1.html": "Web 3.0, AI, and the Future of the Internet",
 };

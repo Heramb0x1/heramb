@@ -91,12 +91,14 @@ body {
   color: #ffffff;
   width: 100px;
   cursor:pointer;
+  text-decoration: none;
   
 }
 .button-moode:hover{
   background-color: #ffffff;
   color: #000000;
   width: 100px;
+  text-decoration: none;
 }
 
 p {

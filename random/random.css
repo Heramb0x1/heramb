@@ -77,29 +77,6 @@ body {
   }
 }
 
-.try-button{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.button-moode{
-  border: #ffffff 1px solid;
-  border-radius: 20px;
-  padding: 0.5em 1em;
-  background-color: #000000;
-  color: #ffffff;
-  width: 100px;
-  cursor:pointer;
-  
-}
-.button-moode:hover{
-  background-color: #ffffff;
-  color: #000000;
-  width: 100px;
-  
-}
-
 p {
   margin-bottom: 1.5em;
 }

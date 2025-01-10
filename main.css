@@ -180,6 +180,10 @@ h1 span {
   margin-top: 2em;
 }
 
+.bread:hover{
+  color: #d16e2a
+}
+
 .about-text {
   max-width: 600px;
 }

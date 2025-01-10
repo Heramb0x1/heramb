@@ -101,6 +101,11 @@ body {
   text-decoration: none;
 }
 
+
+.bread:hover{
+  color: #d16e2a;
+}
+
 p {
   margin-bottom: 1.5em;
 }
@@ -127,6 +132,10 @@ p {
 
 .breadcrumbs a:hover {
   color: #ffffff;
+}
+
+.breadcrumbs:hover{
+  color: #d16e2a;
 }
 
 ul {

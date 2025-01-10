@@ -1,9 +1,9 @@
 const currentPage = window.location.pathname;
 const pageNames = {
-  "/": "home",
-  "/blogs/blogs.html": "blogs",
-  "/about/about.html": "about",
-  "/projects/projects.html": "projects",
+  "/": "[h] home",
+  "/blogs/blogs.html": "[b] blogs",
+  "/about/about.html": "[a] about",
+  "/projects/projects.html": "[p] projects",
   "/projects/project1.html": "MoodE : Mood Based Environment Development",
   "/projects/project2.html": "aiindians.org",
   "/blogs/blog0.html": "Back to Hell! ",
@@ -17,9 +17,9 @@ function generateBreadcrumbs() {
     .split("/")
     .filter((segment) => segment !== "");
 
-  let breadcrumbPath = '<a href="/">home</a>';
+  let breadcrumbPath = '<a href="/">[h] home</a>';
 
-  if (currentPage.startsWith("/blogs/")) {
+  if (currentPage.startsWith("/[b] blogs/")) {
     breadcrumbPath += ` / <a href="/blogs/blogs.html">blogs</a>`;
 
     if (currentPage !== "/blogs/blogs.html") {
@@ -27,7 +27,7 @@ function generateBreadcrumbs() {
         pageNames[currentPage] || pathSegments[pathSegments.length - 1];
       breadcrumbPath += ` / ${blogName}`;
     }
-  } else if (currentPage.startsWith("/projects/")) {
+  } else if (currentPage.startsWith("/[p] projects/")) {
     breadcrumbPath += ` / <a href="/projects/projects.html">projects</a>`;
 
     if (currentPage !== "/projects/projects.html") {

@@ -92,6 +92,11 @@ p {
   margin-top: 2em;
 }
 
+
+.bread:hover{
+  color: #d16e2a;
+}
+
 .projects-container h1 {
   font-size: 2.5em;
   font-weight: 700;

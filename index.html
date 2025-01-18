@@ -17,9 +17,8 @@
 <body>
 
   <div class="desktop-1">
-    <div class="breadcrumbs"></div>
     <div class="heramb">
-      heramb
+      <dfn>heramb</dfn>
     </div>
     <header>
       <a href="index.html" class ="bread">[h] home</a>
@@ -28,18 +27,44 @@
       <a href="works.html" style="padding-left:8px;" class ="bread">[w] work</a>
       <a href="about/about.html" style="padding-left:8px;" class ="bread">[a] about</a>
       <a href="click.html" style="padding-left:8px;" class ="bread">[c] my clicks.</a>
+      <div class="theme-toggle">
+        <button class="theme-toggle-button" onclick="toggleTheme()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon-sun">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2"></path>
+                <path d="M12 20v2"></path>
+                <path d="M4.93 4.93l1.41 1.41"></path>
+                <path d="M17.66 17.66l1.41 1.41"></path>
+                <path d="M2 12h2"></path>
+                <path d="M20 12h2"></path>
+                <path d="M6.34 17.66l-1.41 1.41"></path>
+                <path d="M19.07 4.93l-1.41 1.41"></path>
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon-moon hidden">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+            </svg>
+
+            <span class="hidden-text">Toggle theme</span>
+        </button>
+    </div>
     </header>
+
     <div class="line-1">
     </div>
 
     <h5> Hey myself heramb! </h5>
     
-    <marquee style="color: black; background-color: aliceblue; display:flex; width:300px;">namaste</marquee>
+    <marquee>namaste</marquee>
     <p style="padding-bottom:8px;"> I build cool stuff.</p>
     <p> - Developer at hackclub</p>
     <p> - Founding prismlabs</p>
     <p> - Tech at Google Developer Groups </p>
-    <p> - Building <a href="https://www.betterworkai.org/" class="betterwork-ai" target="_blank"> betterwork.ai
+    <p> - Building <a href="https://www.betterworkai.org/" class="betterwork-ai" target="_blank"> <strong>betterwork.ai</strong>
       </a>
     </p>
     <p> - Graduated as a builder in n&w s5 buildspace </p>
@@ -47,23 +72,23 @@
 
 
     <div>
-      <span class="linkedin-com" style="color: white; cursor: pointer;"
+      <span class="linkedin-com" style="cursor: pointer;"
         onclick="window.open('https://www.linkedin.com/in/heramb-salunkhe/', '_blank');">linkedin dot com
       </span>
 
-      <span class="xdot-com" style="color: white; cursor: pointer;"
+      <span class="xdot-com" style="cursor: pointer;"
         onclick="window.open('https://twitter.com/intent/follow?screen_name=heramb0x1', '_blank');">x dot com
       </span>
 
-      <span class="instagram-com" style="color: white; cursor: pointer;"
+      <span class="instagram-com" style="cursor: pointer;"
         onclick="window.open('https://www.instagram.com/heramb.0x1/', '_blank');">insta dot com
       </span>
 
-      <span class="github-com" style="color: white; cursor: pointer;"
+      <span class="github-com" style="cursor: pointer;"
         onclick="window.open('https://github.com/Heramb0x1', '_blank');">github dot com
       </span>
     
-      <span class="github-com" style="color: white; cursor: pointer;"
+      <span class="github-com" style="cursor: pointer;"
         onclick="window.open('https://discordapp.com/users/1244863778596847723', '_blank');">discord dot gg
       </span>
       
@@ -89,6 +114,26 @@
     </div>
 
   </footer>
+
+<script>
+          function toggleTheme() {
+            const body = document.body;
+            const sunIcon = document.querySelector('.icon-sun');
+            const moonIcon = document.querySelector('.icon-moon');
+
+            body.classList.toggle('dark');
+
+            sunIcon.classList.toggle('hidden', body.classList.contains('dark'));
+            moonIcon.classList.toggle('hidden', !body.classList.contains('dark'));
+
+            if (document.startViewTransition) {
+                document.startViewTransition(() => {
+                    console.log("View Transition Applied");
+                });
+            }
+        }
+
+</script>
 </body>
 
 </html>

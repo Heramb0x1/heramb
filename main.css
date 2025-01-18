@@ -201,6 +201,14 @@ i.dark::view-transition-old(root) {
   color: #000000;
 }
 
+
+html {
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+
 .github-com:hover {
   background-color: #ff00c7;
   color: #000000;

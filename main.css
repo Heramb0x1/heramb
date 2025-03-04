@@ -53,22 +53,55 @@ body.dark {
 .rainbow-text-loop {
   display: inline-block;
   margin-top: 1rem;
-  -webkit-animation: rainbow 5s infinite; 
+  -webkit-animation: rainbow 5s infinite;
 }
 
-@-webkit-keyframes rainbow{
-  0%{color: orange;}  
-  10%{color: purple;} 
-  20%{color: red;}
-  30%{color: CadetBlue;}
-  40%{color: yellow;}
-  50%{color: coral;}
-  60%{color: green;}
-  70%{color: cyan;}
-  80%{color: DeepPink;}
-  90%{color: DodgerBlue;}
-  100%{color: orange;}
-} 
+@-webkit-keyframes rainbow {
+  0% {
+    color: orange;
+  }
+
+  10% {
+    color: purple;
+  }
+
+  20% {
+    color: red;
+  }
+
+  30% {
+    color: CadetBlue;
+  }
+
+  40% {
+    color: yellow;
+  }
+
+  50% {
+    color: coral;
+  }
+
+  60% {
+    color: green;
+  }
+
+  70% {
+    color: cyan;
+  }
+
+  80% {
+    color: DeepPink;
+  }
+
+  90% {
+    color: DodgerBlue;
+  }
+
+  100% {
+    color: orange;
+  }
+}
+
 .space-mono-bold {
   font-family: "Space Mono", monospace;
   font-weight: 700;
@@ -108,7 +141,7 @@ html {
 dfn,
 strong,
 i.dark::view-transition-old(root) {
-    color: crimson;
+  color: crimson;
 }
 
 
@@ -118,7 +151,18 @@ i.dark::view-transition-old(root) {
   color: #00ffea;
 }
 
-.ois{
+.aiindian {
+  text-decoration: underline dotted grey;
+  text-decoration-thickness: 2.4px;
+  color: #00ffea;
+}
+
+.aiindian:hover {
+  background-color: #00ff51;
+  color: #000000;
+}
+
+.ois {
   text-decoration: underline dotted grey;
   text-decoration-thickness: 2.4px;
   color: blue;
@@ -146,38 +190,37 @@ i.dark::view-transition-old(root) {
 
 @keyframes scale {
   0% {
-  mask-size: 0;
+    mask-size: 0;
   }
+
   10% {
-  mask-size: 50vmax;
+    mask-size: 50vmax;
   }
+
   90% {
-  mask-size: 50vmax;
+    mask-size: 50vmax;
   }
+
   100% {
-  mask-size: 2000vmax;
+    mask-size: 2000vmax;
   }
 }
 
 :root {
-  --expo-in: linear(
-      0 0%, 0.0085 31.26%, 0.0167 40.94%,
+  --expo-in: linear(0 0%, 0.0085 31.26%, 0.0167 40.94%,
       0.0289 48.86%, 0.0471 55.92%,
       0.0717 61.99%, 0.1038 67.32%,
       0.1443 72.07%, 0.1989 76.7%,
       0.2659 80.89%, 0.3465 84.71%,
       0.4419 88.22%, 0.554 91.48%,
-      0.6835 94.51%, 0.8316 97.34%, 1 100%
-      );
-  --expo-out: linear(
-  0 0%, 0.1684 2.66%, 0.3165 5.49%,
-  0.446 8.52%, 0.5581 11.78%,
-  0.6535 15.29%, 0.7341 19.11%,
-  0.8011 23.3%, 0.8557 27.93%,
-  0.8962 32.68%, 0.9283 38.01%,
-  0.9529 44.08%, 0.9711 51.14%,
-  0.9833 59.06%, 0.9915 68.74%, 1 100%
-  );
+      0.6835 94.51%, 0.8316 97.34%, 1 100%);
+  --expo-out: linear(0 0%, 0.1684 2.66%, 0.3165 5.49%,
+      0.446 8.52%, 0.5581 11.78%,
+      0.6535 15.29%, 0.7341 19.11%,
+      0.8011 23.3%, 0.8557 27.93%,
+      0.8962 32.68%, 0.9283 38.01%,
+      0.9529 44.08%, 0.9711 51.14%,
+      0.9833 59.06%, 0.9915 68.74%, 1 100%);
 }
 
 .xdot-com,

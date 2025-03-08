@@ -9,9 +9,7 @@ body {
   overflow-x: hidden;
   transition: background-color 0.5s, color 0.5s;
   background-color: #f4f4f4;
-  background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXk3MW5hYXV4cTI5dXoyOHFrODVrejlla2I0M3M3MjMzMnlveGdmdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/daJI7C74i7g2UJxJ3h/giphy.gif);
   color: #000;
-  background-size: cover;
   font-family: "Space Mono", monospace;
   font-weight: 300;
   font-style: normal;

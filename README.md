@@ -25,5 +25,5 @@ Expect more updates on projects, work and my clicks. You'll never know when you'
 
 ## My Other projects : 
 > ml0 > ML Notebook > **[ml0.betterworkai.org](https://ml0.bettterworkai.org)** <br>
-> My Quick-ship > **[heramb.dino.icu](https://heramb.dino.icu)**
+> My Quick-ship > **[heramb.dino.icu](https://heramb.xyz)**
 

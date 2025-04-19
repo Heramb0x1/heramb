@@ -3,6 +3,7 @@ const pageNames = {
   "/": "[h] home",
   "/blogs/blogs.html": "[b] blogs",
   "/about/about.html": "[a] about",
+  "/work/work.html": "[w] work",
   "/projects/projects.html": "[p] projects",
   "/projects/project1.html": "MoodE : Mood Based Environment Development",
   "/projects/project2.html": "aiindians.org",

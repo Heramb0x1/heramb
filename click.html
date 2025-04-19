@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>photography | heramb</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0e0e10;
+            color: #f5f5f5;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            color: #bbb;
+        }
+
+        .breadcrumb a {
+            color: #66ccff;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 18px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        
+        h3{
+            font-style: italic;
+            padding-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+                .heramb {
+        font-family: "Space Mono", monospace;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: var(--text-color);
+        margin-bottom: 0.5rem;
+        }
+
+        .breadcrumbs {
+        color: var(--primary-color);
+        font-size: 0.9rem;
+        font-weight: 700;
+        font-family: "Space Mono", monospace;
+        }
+    
+            body.dark {
+                background-color: var(--background-color);
+                color: var(--text-color);
+            }
+    
+            body.light {
+                background-color: var(--background-color);
+                color: var(--text-color);
+            }
+    </style>
+</head>
+
+
+<body class="dark">
+    <div class="container">
+        <header>
+            <div class="heramb">heramb</div>
+            <nav class="breadcrumbs">
+                <a href="../index.html"> [h] home</a> / [c] my clicks.
+            </nav>
+        </header>
+        <h1>photography</h1>
+        <h3>i like clicking & editing pictures also.</h3>
+
+        <div class="gallery" id="gallery"></div>
+        <script>
+            const imageUrls = [
+                "https://im.vsco.co/aws-us-west-2/6310a9/51936585/6552656049a0d4433a000001/690c93a7-7567-4fc4-9d75-e45a64c693547491087778897817603.jpg?w=180",
+                "https://im.vsco.co/aws-us-west-2/6310a9/51936585/652974ff49a0d42f61000001/a9bbf412-4ca3-45ab-a2fe-565c0b902fa46056981399383596238.jpg?w=180",
+                "https://im.vsco.co/aws-us-west-2/6310a9/51936585/64cf9af94fffc2367e000001/71951391-dd92-4872-93e2-ed15df07bd415002504960707419135.jpg?w=180",
+                "https://im.vsco.co/aws-us-west-2/6310a9/51936585/64761aa991f1190dcc00000e/a5143373-e457-4abb-bdd0-99868948f640127103277874981589.jpg?w=180",
+                "https://im.vsco.co/aws-us-west-2/6310a9/51936585/6476172f91f1190dcc00000c/22020f2d-8598-4ff1-bc88-21a65aa13bf04105417955040063913.jpg?w=180",
+                "https://im.vsco.co/aws-us-west-2/6310a9/51936585/647615fb91f1190dcc00000a/89f4aad5-1ef1-4e14-9f4d-bb4c5571089e7856012114098587492.jpg?w=180",
+                "https://im.vsco.co/aws-us-west-2/6310a9/51936585/647615bf91f1190dcc000008/0dd58c30-3b2c-4912-a35a-d54168e160672049651300466708268.jpg?w=180",
+                "https://im.vsco.co/aws-us-west-2/6310a9/51936585/647614ea91f1190dcc000006/4cd56406-c6ba-4c79-a6ee-5508ffc1412d7846379677252041722.jpg?w=180",
+                "https://im.vsco.co/aws-us-west-2/6310a9/51936585/647614b891f1190dcc000003/eb145f9c-bf62-419c-b94d-f510fe24c64a1054985766475481073.jpg?w=180",
+                "https://im.vsco.co/aws-us-west-2/6310a9/51936585/6476140391f1190dcc000001/ae91881e-a121-4a64-a4ce-4606947b97702128811101880764905.jpg?w=180",
+                "https://im.vsco.co/aws-us-west-2/6310a9/51936585/64759a1791f1197b01000005/70379424-b591-4833-91b7-b3359093d9468769685569545432729.jpg?w=180",
+                "https://im.vsco.co/aws-us-west-2/6310a9/51936585/647599a691f1197b01000003/1b298225-d85f-4c4b-96d6-839203976be9442598593669555348.jpg?w=180",
+                "https://im.vsco.co/aws-us-west-2/6310a9/51936585/64757cac91f119039a000010/c4eb9d43-f877-4b55-9ac6-93ed578da2386712054788836742720.jpg?w=180",
+                "https://im.vsco.co/aws-us-west-2/6310a9/51936585/64757b8591f119039a00000d/90dc4ed6-0f33-401d-8d21-2c889217d9074110060865736785124.jpg?w=180",
+                "https://im.vsco.co/aws-us-west-2/6310a9/51936585/64757b5691f119039a00000b/ae6d6e52-c1f2-4428-8502-384fed82112c7064215747867982153.jpg?w=180"
+            ];
+
+            const gallery = document.getElementById('gallery');
+
+            imageUrls.forEach(url => {
+                const img = document.createElement('img');
+                img.src = url;
+                img.alt = "VSCO Photo";
+                gallery.appendChild(img);
+            });
+        </script>
+    </div>
+    </main>
+</body>
+
+</html>

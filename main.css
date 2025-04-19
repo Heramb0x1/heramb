@@ -3,6 +3,33 @@
   box-sizing: border-box;
 }
 
+.columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.left-column, .right-column {
+  flex: 1 1 45%;
+  margin: 1rem;
+}
+
+.ascii-art {
+  font-family: monospace;
+  white-space: pre;
+  display: block;
+  line-height: 1;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: bold;
+  overflow: visible;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
 
 body {
   width: 100%;
